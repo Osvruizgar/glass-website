@@ -33,7 +33,6 @@ main {
 }
 
 .glass {
-  background: white;
   min-height: 80vh;
   width: 60%;
   background: linear-gradient(
@@ -180,4 +179,74 @@ main {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 1350px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2,
+  h1,
+  h3,
+  p {
+    color: #092644;
+  }
+  .glass {
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom, green, white);
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+  }
+  .card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+  }
+}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2,
+  h1,
+  h3,
+  p {
+    color: #092644;
+  }
+  .glass {
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom, tan, white);
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+  }
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(252, 0, 0, 0.3)
+  );
+  border-radius: 2rem;
+}
+.card {
+  display: flex-shrink;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
 }
