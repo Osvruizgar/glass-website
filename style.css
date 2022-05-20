@@ -250,3 +250,9 @@ main {
     rgba(255, 255, 255, 0.5)
   );
 }
+.games {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
